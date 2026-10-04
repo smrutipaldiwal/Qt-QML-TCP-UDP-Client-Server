@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/client/">
+    <file alias="Main.qml">C:/Users/smrut/Documents/client/Main.qml</file>
+    <file alias="RecordForm.qml">C:/Users/smrut/Documents/client/RecordForm.qml</file>
+  </qresource>
+</RCC>
+

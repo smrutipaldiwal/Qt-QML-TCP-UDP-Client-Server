@@ -1,0 +1,7 @@
+module client
+typeinfo appclient.qmltypes
+prefer :/qt/qml/client/
+Main 254.0 Main.qml
+RecordForm 254.0 RecordForm.qml
+depends QtQuick
+

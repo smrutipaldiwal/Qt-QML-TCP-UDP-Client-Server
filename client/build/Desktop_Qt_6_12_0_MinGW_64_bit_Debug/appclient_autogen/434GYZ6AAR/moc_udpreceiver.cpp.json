@@ -1,0 +1,103 @@
+{
+    "classes": [
+        {
+            "className": "UdpReceiver",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "UdpReceiver",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 18,
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "respID",
+                            "type": "quint8"
+                        },
+                        {
+                            "name": "ack",
+                            "type": "quint8"
+                        },
+                        {
+                            "name": "uniqueID",
+                            "type": "quint32"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "float"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "float"
+                        },
+                        {
+                            "name": "comment",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 19,
+                    "name": "addResponseReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "respID",
+                            "type": "quint8"
+                        },
+                        {
+                            "name": "ack",
+                            "type": "quint8"
+                        },
+                        {
+                            "name": "uniqueID",
+                            "type": "quint32"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 21,
+                    "name": "deleteResponseReceived",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 3,
+                    "lineNumber": 15,
+                    "name": "start",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 4,
+                    "lineNumber": 24,
+                    "name": "readPendingDatagrams",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "udpreceiver.h",
+    "outputRevision": 69
+}

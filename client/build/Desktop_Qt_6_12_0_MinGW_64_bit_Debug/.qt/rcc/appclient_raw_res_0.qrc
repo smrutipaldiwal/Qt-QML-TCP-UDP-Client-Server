@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/client/">
+    <file alias="../../Downloads/Qt_Client_Server_Refined/qt_refined/client/CMakeLists.txt">C:/Users/smrut/Documents/client/../../Downloads/Qt_Client_Server_Refined/qt_refined/client/CMakeLists.txt</file>
+    <file alias="../../Downloads/Qt_Client_Server_Refined/qt_refined/client/qml.qrc">C:/Users/smrut/Documents/client/../../Downloads/Qt_Client_Server_Refined/qt_refined/client/qml.qrc</file>
+  </qresource>
+</RCC>
+

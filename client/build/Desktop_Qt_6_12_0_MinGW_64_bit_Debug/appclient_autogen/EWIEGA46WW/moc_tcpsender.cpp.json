@@ -1,0 +1,98 @@
+{
+    "classes": [
+        {
+            "className": "TcpSender",
+            "lineNumber": 9,
+            "object": true,
+            "qualifiedClassName": "TcpSender",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 21,
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "uniqueID",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "comment",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 16,
+                    "name": "sendAdd",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "uniqueID",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "comment",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 17,
+                    "name": "sendUpdate",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "uniqueID",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 18,
+                    "name": "sendDelete",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "tcpsender.h",
+    "outputRevision": 69
+}

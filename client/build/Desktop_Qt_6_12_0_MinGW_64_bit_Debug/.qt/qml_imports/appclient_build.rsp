@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/smrut/Documents/client
+-cmake-output
+-output-file
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/.qt/qml_imports/appclient_build.cmake
+-importPath
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug
+-importPath
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/client
+-importPath
+C:/Qt/6.12.0/mingw_64/qml
+-qrcFiles
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/.qt/rcc/qmake_client.qrc
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/.qt/rcc/appclient_raw_qml_0.qrc
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/.qt/rcc/appclient_raw_res_0.qrc

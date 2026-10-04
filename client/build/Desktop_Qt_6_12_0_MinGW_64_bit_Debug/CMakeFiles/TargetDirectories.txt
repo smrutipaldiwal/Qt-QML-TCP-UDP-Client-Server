@@ -1,0 +1,6 @@
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/client.dir
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/client_qmlimportscan.dir
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/edit_cache.dir
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/client_autogen_timestamp_deps.dir
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/client_autogen.dir

@@ -1,0 +1,938 @@
+[
+    {
+        "classes": [
+            {
+                "className": "ClientController",
+                "lineNumber": 10,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 24,
+                        "name": "addRecord",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 26,
+                        "name": "updateRecord",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 10,
+                        "lineNumber": 28,
+                        "name": "deleteRecord",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 14,
+                        "name": "records",
+                        "notify": "recordsChanged",
+                        "override": false,
+                        "read": "records",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 15,
+                        "name": "status",
+                        "notify": "statusChanged",
+                        "override": false,
+                        "read": "status",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "ClientController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 31,
+                        "name": "recordsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 32,
+                        "name": "statusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 33,
+                        "name": "sendAddRequest",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 34,
+                        "name": "sendUpdateRequest",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 35,
+                        "name": "sendDeleteRequest",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "float"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "float"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 38,
+                        "name": "onAddResponse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 40,
+                        "name": "onDeleteResponse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 41,
+                        "name": "setStatus",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "clientcontroller.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TcpSender",
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "TcpSender",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 21,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 16,
+                        "name": "sendAdd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 17,
+                        "name": "sendUpdate",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 18,
+                        "name": "sendDelete",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tcpsender.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "UdpReceiver",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "UdpReceiver",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 18,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "float"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "float"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 19,
+                        "name": "addResponseReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 21,
+                        "name": "deleteResponseReceived",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 15,
+                        "name": "start",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 24,
+                        "name": "readPendingDatagrams",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "udpreceiver.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ClientController",
+                "lineNumber": 10,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 24,
+                        "name": "addRecord",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 26,
+                        "name": "updateRecord",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 10,
+                        "lineNumber": 28,
+                        "name": "deleteRecord",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 14,
+                        "name": "records",
+                        "notify": "recordsChanged",
+                        "override": false,
+                        "read": "records",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 15,
+                        "name": "status",
+                        "notify": "statusChanged",
+                        "override": false,
+                        "read": "status",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "ClientController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 31,
+                        "name": "recordsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 32,
+                        "name": "statusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 33,
+                        "name": "sendAddRequest",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 34,
+                        "name": "sendUpdateRequest",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 35,
+                        "name": "sendDeleteRequest",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "float"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "float"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 38,
+                        "name": "onAddResponse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 40,
+                        "name": "onDeleteResponse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 41,
+                        "name": "setStatus",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "clientcontroller.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TcpSender",
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "TcpSender",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 21,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 16,
+                        "name": "sendAdd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 17,
+                        "name": "sendUpdate",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "uniqueID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 18,
+                        "name": "sendDelete",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tcpsender.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "UdpReceiver",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "UdpReceiver",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 18,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            },
+                            {
+                                "name": "lat",
+                                "type": "float"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "float"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 19,
+                        "name": "addResponseReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "respID",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "ack",
+                                "type": "quint8"
+                            },
+                            {
+                                "name": "uniqueID",
+                                "type": "quint32"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 21,
+                        "name": "deleteResponseReceived",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 15,
+                        "name": "start",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 24,
+                        "name": "readPendingDatagrams",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "udpreceiver.h",
+        "outputRevision": 69
+    }
+]

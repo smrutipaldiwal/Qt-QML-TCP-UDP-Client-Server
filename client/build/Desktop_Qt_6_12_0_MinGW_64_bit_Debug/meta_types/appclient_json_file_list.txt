@@ -1,0 +1,6 @@
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/appclient_autogen/include/../434GYZ6AAR/moc_clientcontroller.cpp.json
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/appclient_autogen/include/../434GYZ6AAR/moc_tcpsender.cpp.json
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/appclient_autogen/include/../434GYZ6AAR/moc_udpreceiver.cpp.json
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/appclient_autogen/include/../EWIEGA46WW/moc_clientcontroller.cpp.json
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/appclient_autogen/include/../EWIEGA46WW/moc_tcpsender.cpp.json
+C:/Users/smrut/Documents/client/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/appclient_autogen/include/../EWIEGA46WW/moc_udpreceiver.cpp.json
